@@ -10,7 +10,7 @@ function App() {
     return (
         <HashRouter>
             <Routes>
-                {/*<Route path="/" element={<CompletenessCheck/>} />*/}
+                <Route path="/" element={<CompletenessCheck/>} />
                 <Route path="/completeness" element={<CompletenessCheck/>} />
                 <Route path="/format" element={<FormatCheck/>} />
                 <Route path="/domain" element={<DomainCheck/>} />
