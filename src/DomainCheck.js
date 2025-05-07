@@ -283,10 +283,10 @@ function DomainCheck() {
                 <h1 style={{flexGrow: 1, textAlign: 'center', margin: 0, marginLeft: '250px', fontSize: '24px', fontWeight: '500', color: 'white'}}>
                     Domain Check
                 </h1>
-                <Link to="/format" style={{ marginRight: '25px' }}>Format</Link>
-                <Link to="/completeness" style={{ marginRight: '25px' }}>Completeness</Link>
-                {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/completeness`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Completeness Check</a>*/}
-                {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/format`} style={{color: "white", textDecoration: "none"}}>Format Check</a>*/}
+                {/*<Link to="/#/format" style={{ marginRight: '25px' }}>Format</Link>*/}
+                {/*<Link to="/#/completeness" style={{ marginRight: '25px' }}>Completeness</Link>*/}
+                <a href={`${process.env.REACT_APP_FRONTEND_URL}/#/completeness`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Completeness Check</a>
+                <a href={`${process.env.REACT_APP_FRONTEND_URL}/#/format`} style={{color: "white", textDecoration: "none"}}>Format Check</a>
             </header>
             <div style={{backgroundColor: '#e6f0fa', padding: '20px', borderRadius: '8px', boxShadow: '0 2px 10px rgba(0, 0, 0, 0.05)', marginBottom: '20px', textAlign: 'center',}}>
                 <h2 style={{fontSize: '20px', fontWeight: '500', color: '#333', marginBottom: '15px',}}>

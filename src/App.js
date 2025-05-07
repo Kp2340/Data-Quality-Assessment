@@ -3,9 +3,9 @@ import CompletenessCheck from "./CompletenessCheck";
 import DomainCheck from "./DomainCheck";
 import FormatCheck from "./FormatCheck";
 
-function NotFound() {
-    return <h2>404 - Page Not Found</h2>;
-}
+// function NotFound() {
+//     return <h2>404 - Page Not Found</h2>;
+// }
 function App() {
     return (
         <HashRouter>
@@ -14,7 +14,6 @@ function App() {
                 <Route path="/completeness" element={<CompletenessCheck/>} />
                 <Route path="/format" element={<FormatCheck/>} />
                 <Route path="/domain" element={<DomainCheck/>} />
-                <Route path="*" element={<NotFound />} />
             </Routes>
         </HashRouter>
     );
