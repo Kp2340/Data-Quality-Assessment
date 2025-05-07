@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import {Link} from "react-router-dom";
 
 function CompletenessCheck() {
     const [columns, setColumns] = useState([]);
@@ -105,8 +106,10 @@ function CompletenessCheck() {
                 <h1 style={{flexGrow: 1, textAlign: 'center', margin: 0, marginLeft: '250px', fontSize: '24px', fontWeight: '500', color: 'white'}}>
                     Commission and Omission Calculator
                 </h1>
-                <a href={`${process.env.REACT_APP_FRONTEND_URL}/format`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Format Check</a>
-                <a href={`${process.env.REACT_APP_FRONTEND_URL}/domain`} style={{color: "white", textDecoration: "none"}}>Domain Check</a>
+                <Link to="/format" style={{ marginRight: '25px' }}>Format</Link>
+                <Link to="/domain" style={{ marginRight: '25px' }}>Domain</Link>
+                {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/format`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Format Check</a>*/}
+                {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/domain`} style={{color: "white", textDecoration: "none"}}>Domain Check</a>*/}
             </header>
 
             {/* File Upload Section */}

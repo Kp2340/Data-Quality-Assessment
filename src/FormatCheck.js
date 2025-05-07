@@ -1,5 +1,6 @@
 import React, {useState} from "react";
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 function FormatCheck() {
     const[selectedFormat, setSelectedFormat] = useState("");
@@ -89,8 +90,10 @@ function FormatCheck() {
             <h1 style={{flexGrow: 1, textAlign: 'center', margin: 0, marginLeft: '250px', fontSize: '24px', fontWeight: '500', color: 'white'}}>
                 Format Check
             </h1>
-            <a href={`${process.env.REACT_APP_FRONTEND_URL}/domain`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Domain Check</a>
-            <a href={`${process.env.REACT_APP_FRONTEND_URL}/completeness`} style={{color: "white", textDecoration: "none"}}>Completeness Check</a>
+            <Link to="/completeness" style={{ marginRight: '25px' }}>Completeness</Link>
+            <Link to="/domain" style={{ marginRight: '25px' }}>Domain</Link>
+            {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/domain`} style={{marginRight: '25px', color: "white", textDecoration: "none"}}>Domain Check</a>*/}
+            {/*<a href={`${process.env.REACT_APP_FRONTEND_URL}/completeness`} style={{color: "white", textDecoration: "none"}}>Completeness Check</a>*/}
         </header>
             <div style={{ textAlign: "center", marginTop: "20px" }}>
                 <select
